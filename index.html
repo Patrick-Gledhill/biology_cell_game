@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+    <title>Cytology: The Game</title>
+</head>
+<body>
+    <p style="position: fixed; left: 0px; bottom: 0px; margin: 4px; font-size: 12px;">This game was created from scratch
+        by Patrick Gledhill.</p>
+    <div id="main-menu" class="center-obj-container">
+        <h1>Cytology</h1>
+        <div class="button-list">
+            <button type="button" class="btn-1" id="play-button">Play</button>
+            <button type="button" class="btn-1 gray" id="htp-button">How To Play (Rules)</button>
+        </div>
+    </div>
+    <div id="how-to-menu" class="center-obj-container">
+        <div class="popup-window">
+            <h2>How To Play</h2>
+            <hr>
+            <p style="line-height: 1.5;">To play, you answer questions to gain ATP (1 question = 2 ATP). Use your ATP to defend your cell from pathogens that try to tear your cell's membrane by tugging at it! Use your ATP to slice the pathogens in half to eliminate them!</p>
+            <br>
+            <p>You must protect your cell while your answer only 25 questions. If your cell's membrane gets torn, you lose!</p>
+            <hr>
+            <p>To slice a pathogen, you have to click and drag over it.</p>
+            <hr>
+            <button type="button" class="close-menu-btn btn-1 gray">Close</button>
+        </div>
+    </div>
+    <div id="question-container" class="question-container-box">
+        <div>
+            <h2 style="margin-bottom: 16px;" id="q-number">Question 0:</h2>
+            <p id="question-display">Do you think you are supposed to see this?</p>
+        </div>
+            <div class="vrow-wgap">
+                <div class="row-wgap">
+                    <input type="radio" name="multChoiceRadio" id="radio-btn-1">
+                    <label for="radio-btn-1" id="radio-btn-1-label">Yes</label>
+                </div>
+                <div class="row-wgap">
+                    <input type="radio" name="multChoiceRadio" id="radio-btn-2">
+                    <label for="radio-btn-2" id="radio-btn-2-label">Heck No</label>
+                </div>
+                <div class="row-wgap">
+                    <input type="radio" name="multChoiceRadio" id="radio-btn-3">
+                    <label for="radio-btn-3" id="radio-btn-3-label">Maybe</label>
+                </div>
+                <div class="row-wgap">
+                    <input type="radio" name="multChoiceRadio" id="radio-btn-4">
+                    <label for="radio-btn-4" id="radio-btn-4-label">Probably Yes?</label>
+                </div>
+                <button type="button" class="btn-1 gray" id="next-question-btn">Next Question</button>
+                <button type="button" class="btn-1 gray" id="reset-game">Replay Game</button>
+                <button type="button" class="btn-1 gray" id="htp-button-2">How To Play (Rules)</button>
+            </div>
+    </div>
+    <canvas id="scene"></canvas>
+</body>
+</html>
