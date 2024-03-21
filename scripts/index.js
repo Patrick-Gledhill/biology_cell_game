@@ -703,7 +703,7 @@ function createCell(x, y, radius, segments) {
     }
 }
 
-createCell(0, 0, 192, 64);
+createCell(0, 0, 256, 64);
 
 startingSegments = cLines.length;
 
@@ -1229,7 +1229,7 @@ replayGameBtn.onclick = function () {
     pathogens = [
         new Pathogen(-512, 0)
     ];
-    createCell(0, 0, 192, 64);
+    createCell(0, 0, 256, 64);
     cellATP = 0;
     cellIsDead = false;
     startingSegments = cLines.length;
